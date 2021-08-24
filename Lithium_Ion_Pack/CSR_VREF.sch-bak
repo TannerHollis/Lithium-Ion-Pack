@@ -1,0 +1,545 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 7725 3225
+Text HLabel 8575 3225 2    50   Output ~ 0
+V_I_DEV
+Wire Wire Line
+	7725 3225 7625 3225
+Wire Wire Line
+	7725 2575 7725 3225
+Wire Wire Line
+	7475 2575 7725 2575
+$Comp
+L Device:R R?
+U 1 1 61570D35
+P 7325 2575
+AR Path="/6124321F/61570D35" Ref="R?"  Part="1" 
+AR Path="/61528830/61570D35" Ref="R?"  Part="1" 
+F 0 "R?" V 7118 2575 50  0000 C CNN
+F 1 "165K" V 7209 2575 50  0000 C CNN
+F 2 "" V 7255 2575 50  0001 C CNN
+F 3 "~" H 7325 2575 50  0001 C CNN
+	1    7325 2575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6325 3725 6925 3725
+Text HLabel 6325 3725 0    50   Output ~ 0
+1V65_REF
+Wire Wire Line
+	6925 3725 6925 3675
+Wire Wire Line
+	6325 3325 6425 3325
+Wire Wire Line
+	6325 3125 6425 3125
+Text HLabel 6325 3325 0    50   Input ~ 0
+CSR_DEV-
+Text HLabel 6325 3125 0    50   Input ~ 0
+CSR_DEV+
+Connection ~ 6925 3325
+Wire Wire Line
+	6925 3325 6725 3325
+Wire Wire Line
+	6925 3325 7025 3325
+Wire Wire Line
+	6925 3375 6925 3325
+Connection ~ 6925 3125
+Wire Wire Line
+	6925 3125 7025 3125
+Wire Wire Line
+	6925 3125 6725 3125
+Wire Wire Line
+	6925 2575 6925 3125
+Wire Wire Line
+	7175 2575 6925 2575
+$Comp
+L Device:R R?
+U 1 1 6156355D
+P 6925 3525
+AR Path="/6124321F/6156355D" Ref="R?"  Part="1" 
+AR Path="/61528830/6156355D" Ref="R?"  Part="1" 
+F 0 "R?" H 6855 3479 50  0000 R CNN
+F 1 "165K" H 6855 3570 50  0000 R CNN
+F 2 "" V 6855 3525 50  0001 C CNN
+F 3 "~" H 6925 3525 50  0001 C CNN
+	1    6925 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61563553
+P 6575 3325
+AR Path="/6124321F/61563553" Ref="R?"  Part="1" 
+AR Path="/61528830/61563553" Ref="R?"  Part="1" 
+F 0 "R?" V 6368 3325 50  0000 C CNN
+F 1 "5K" V 6459 3325 50  0000 C CNN
+F 2 "" V 6505 3325 50  0001 C CNN
+F 3 "~" H 6575 3325 50  0001 C CNN
+	1    6575 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61563297
+P 6575 3125
+AR Path="/6124321F/61563297" Ref="R?"  Part="1" 
+AR Path="/61528830/61563297" Ref="R?"  Part="1" 
+F 0 "R?" V 6368 3125 50  0000 C CNN
+F 1 "5K" V 6459 3125 50  0000 C CNN
+F 2 "" V 6505 3125 50  0001 C CNN
+F 3 "~" H 6575 3125 50  0001 C CNN
+	1    6575 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6975 4850 7025 4850
+Connection ~ 4525 3225
+Wire Wire Line
+	5375 3225 5200 3225
+Text HLabel 5375 3225 2    50   Output ~ 0
+V_I_BATT
+Connection ~ 4525 4950
+Wire Wire Line
+	4525 4950 4650 4950
+Text HLabel 4650 4950 2    50   Output ~ 0
+1V_REF
+Wire Wire Line
+	3775 4850 3825 4850
+Wire Wire Line
+	3775 4450 4525 4450
+Wire Wire Line
+	4525 4450 4525 4950
+Wire Wire Line
+	3775 4450 3775 4850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6154571F
+P 3425 4625
+AR Path="/6124321F/6154571F" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/6154571F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3425 4475 50  0001 C CNN
+F 1 "+3.3V" H 3440 4798 50  0000 C CNN
+F 2 "" H 3425 4625 50  0001 C CNN
+F 3 "" H 3425 4625 50  0001 C CNN
+	1    3425 4625
+	1    0    0    -1  
+$EndComp
+Connection ~ 3425 5050
+Wire Wire Line
+	3425 5100 3425 5050
+Wire Wire Line
+	3425 5050 3825 5050
+Wire Wire Line
+	3425 5475 3425 5400
+$Comp
+L power:GND #PWR?
+U 1 1 61545711
+P 3425 5475
+AR Path="/6124321F/61545711" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/61545711" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3425 5225 50  0001 C CNN
+F 1 "GND" H 3430 5302 50  0000 C CNN
+F 2 "" H 3425 5475 50  0001 C CNN
+F 3 "" H 3425 5475 50  0001 C CNN
+	1    3425 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61545707
+P 3425 5250
+AR Path="/6124321F/61545707" Ref="R?"  Part="1" 
+AR Path="/61528830/61545707" Ref="R?"  Part="1" 
+F 0 "R?" H 3355 5204 50  0000 R CNN
+F 1 "6K" H 3355 5295 50  0000 R CNN
+F 2 "" V 3355 5250 50  0001 C CNN
+F 3 "~" H 3425 5250 50  0001 C CNN
+	1    3425 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3425 5000 3425 5050
+Wire Wire Line
+	3425 4625 3425 4700
+$Comp
+L Device:R R?
+U 1 1 6154543B
+P 3425 4850
+AR Path="/6124321F/6154543B" Ref="R?"  Part="1" 
+AR Path="/61528830/6154543B" Ref="R?"  Part="1" 
+F 0 "R?" H 3300 4800 50  0000 C CNN
+F 1 "13K8" H 3275 4875 50  0000 C CNN
+F 2 "" V 3355 4850 50  0001 C CNN
+F 3 "~" H 3425 4850 50  0001 C CNN
+	1    3425 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4425 4950 4525 4950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61541C6A
+P 6650 4625
+AR Path="/6124321F/61541C6A" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/61541C6A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 4475 50  0001 C CNN
+F 1 "+3.3V" H 6665 4798 50  0000 C CNN
+F 2 "" H 6650 4625 50  0001 C CNN
+F 3 "" H 6650 4625 50  0001 C CNN
+	1    6650 4625
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 5050
+Wire Wire Line
+	6650 5100 6650 5050
+Wire Wire Line
+	6650 5050 7025 5050
+Wire Wire Line
+	6975 4450 7725 4450
+Wire Wire Line
+	3125 3725 3725 3725
+Text HLabel 3125 3725 0    50   Output ~ 0
+1V65_REF
+Wire Wire Line
+	4025 3525 4025 3775
+$Comp
+L Amplifier_Operational:LM2902 U?
+U 3 1 61531633
+P 4125 4950
+AR Path="/6124321F/61531633" Ref="U?"  Part="3" 
+AR Path="/61528830/61531633" Ref="U?"  Part="3" 
+F 0 "U?" H 4125 4583 50  0000 C CNN
+F 1 "LM2902" H 4125 4674 50  0000 C CNN
+F 2 "" H 4075 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4175 5150 50  0001 C CNN
+	3    4125 4950
+	1    0    0    1   
+$EndComp
+Connection ~ 7725 4950
+Wire Wire Line
+	7850 4950 7725 4950
+Text HLabel 7850 4950 2    50   Output ~ 0
+1V65_REF
+Wire Wire Line
+	7725 4950 7625 4950
+Wire Wire Line
+	7725 4450 7725 4950
+Wire Wire Line
+	6975 4450 6975 4850
+Wire Wire Line
+	6650 5475 6650 5400
+$Comp
+L power:GND #PWR?
+U 1 1 615315C6
+P 6650 5475
+AR Path="/6124321F/615315C6" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/615315C6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6650 5225 50  0001 C CNN
+F 1 "GND" H 6655 5302 50  0000 C CNN
+F 2 "" H 6650 5475 50  0001 C CNN
+F 3 "" H 6650 5475 50  0001 C CNN
+	1    6650 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 615315BF
+P 6650 5250
+AR Path="/6124321F/615315BF" Ref="R?"  Part="1" 
+AR Path="/61528830/615315BF" Ref="R?"  Part="1" 
+F 0 "R?" H 6580 5204 50  0000 R CNN
+F 1 "10K" H 6580 5295 50  0000 R CNN
+F 2 "" V 6580 5250 50  0001 C CNN
+F 3 "~" H 6650 5250 50  0001 C CNN
+	1    6650 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 5000 6650 5050
+Wire Wire Line
+	6650 4625 6650 4700
+$Comp
+L Device:R R?
+U 1 1 615315B6
+P 6650 4850
+AR Path="/6124321F/615315B6" Ref="R?"  Part="1" 
+AR Path="/61528830/615315B6" Ref="R?"  Part="1" 
+F 0 "R?" H 6525 4800 50  0000 C CNN
+F 1 "10K" H 6500 4875 50  0000 C CNN
+F 2 "" V 6580 4850 50  0001 C CNN
+F 3 "~" H 6650 4850 50  0001 C CNN
+	1    6650 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3725 3725 3725 3675
+$Comp
+L power:GND #PWR?
+U 1 1 615315A3
+P 4025 3775
+AR Path="/6124321F/615315A3" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/615315A3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4025 3525 50  0001 C CNN
+F 1 "GND" H 4030 3602 50  0000 C CNN
+F 2 "" H 4025 3775 50  0001 C CNN
+F 3 "" H 4025 3775 50  0001 C CNN
+	1    4025 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 3325 3225 3325
+Wire Wire Line
+	3125 3125 3225 3125
+Text HLabel 3125 3325 0    50   Input ~ 0
+CSR_BATT-
+Text HLabel 3125 3125 0    50   Input ~ 0
+CSR_BATT+
+Connection ~ 3725 3325
+Wire Wire Line
+	3725 3325 3525 3325
+Wire Wire Line
+	3725 3325 3825 3325
+Wire Wire Line
+	3725 3375 3725 3325
+Wire Wire Line
+	4525 3225 4425 3225
+Wire Wire Line
+	4525 2575 4525 3225
+Wire Wire Line
+	4275 2575 4525 2575
+Connection ~ 3725 3125
+Wire Wire Line
+	3725 3125 3825 3125
+Wire Wire Line
+	3725 3125 3525 3125
+Wire Wire Line
+	3725 2575 3725 3125
+Wire Wire Line
+	3975 2575 3725 2575
+Wire Wire Line
+	4025 2925 4025 2875
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6153158B
+P 4025 2875
+AR Path="/6124321F/6153158B" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/6153158B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4025 2725 50  0001 C CNN
+F 1 "+3.3V" H 4040 3048 50  0000 C CNN
+F 2 "" H 4025 2875 50  0001 C CNN
+F 3 "" H 4025 2875 50  0001 C CNN
+	1    4025 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U?
+U 5 1 61531585
+P 4125 3225
+AR Path="/6124321F/61531585" Ref="U?"  Part="5" 
+AR Path="/61528830/61531585" Ref="U?"  Part="5" 
+F 0 "U?" H 4175 3075 50  0000 L CNN
+F 1 "LM2902" H 4075 2975 50  0000 L CNN
+F 2 "" H 4075 3325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4175 3425 50  0001 C CNN
+	5    4125 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6153157F
+P 4125 2575
+AR Path="/6124321F/6153157F" Ref="R?"  Part="1" 
+AR Path="/61528830/6153157F" Ref="R?"  Part="1" 
+F 0 "R?" V 3918 2575 50  0000 C CNN
+F 1 "165K" V 4009 2575 50  0000 C CNN
+F 2 "" V 4055 2575 50  0001 C CNN
+F 3 "~" H 4125 2575 50  0001 C CNN
+	1    4125 2575
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61531579
+P 3725 3525
+AR Path="/6124321F/61531579" Ref="R?"  Part="1" 
+AR Path="/61528830/61531579" Ref="R?"  Part="1" 
+F 0 "R?" H 3655 3479 50  0000 R CNN
+F 1 "165K" H 3655 3570 50  0000 R CNN
+F 2 "" V 3655 3525 50  0001 C CNN
+F 3 "~" H 3725 3525 50  0001 C CNN
+	1    3725 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61531573
+P 3375 3325
+AR Path="/6124321F/61531573" Ref="R?"  Part="1" 
+AR Path="/61528830/61531573" Ref="R?"  Part="1" 
+F 0 "R?" V 3168 3325 50  0000 C CNN
+F 1 "5K" V 3259 3325 50  0000 C CNN
+F 2 "" V 3305 3325 50  0001 C CNN
+F 3 "~" H 3375 3325 50  0001 C CNN
+	1    3375 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6153156D
+P 3375 3125
+AR Path="/6124321F/6153156D" Ref="R?"  Part="1" 
+AR Path="/61528830/6153156D" Ref="R?"  Part="1" 
+F 0 "R?" V 3168 3125 50  0000 C CNN
+F 1 "5K" V 3259 3125 50  0000 C CNN
+F 2 "" V 3305 3125 50  0001 C CNN
+F 3 "~" H 3375 3125 50  0001 C CNN
+	1    3375 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U?
+U 4 1 61531567
+P 7325 4950
+AR Path="/6124321F/61531567" Ref="U?"  Part="4" 
+AR Path="/61528830/61531567" Ref="U?"  Part="4" 
+F 0 "U?" H 7325 4583 50  0000 C CNN
+F 1 "LM2902" H 7325 4674 50  0000 C CNN
+F 2 "" H 7275 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7375 5150 50  0001 C CNN
+	4    7325 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U?
+U 2 1 61531561
+P 7325 3225
+AR Path="/6124321F/61531561" Ref="U?"  Part="2" 
+AR Path="/61528830/61531561" Ref="U?"  Part="2" 
+F 0 "U?" H 7325 2858 50  0000 C CNN
+F 1 "LM2902" H 7325 2949 50  0000 C CNN
+F 2 "" H 7275 3325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 7375 3425 50  0001 C CNN
+	2    7325 3225
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM2902 U?
+U 1 1 6153155B
+P 4125 3225
+AR Path="/6124321F/6153155B" Ref="U?"  Part="1" 
+AR Path="/61528830/6153155B" Ref="U?"  Part="1" 
+F 0 "U?" H 4275 2875 50  0000 C CNN
+F 1 "LM2902" H 4225 2975 50  0000 C CNN
+F 2 "" H 4075 3325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4175 3425 50  0001 C CNN
+	1    4125 3225
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61626EB6
+P 4925 3225
+AR Path="/6124321F/61626EB6" Ref="R?"  Part="1" 
+AR Path="/61528830/61626EB6" Ref="R?"  Part="1" 
+F 0 "R?" V 4718 3225 50  0000 C CNN
+F 1 "1K" V 4809 3225 50  0000 C CNN
+F 2 "" V 4855 3225 50  0001 C CNN
+F 3 "~" H 4925 3225 50  0001 C CNN
+	1    4925 3225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4775 3225 4525 3225
+$Comp
+L Device:C C?
+U 1 1 6162728E
+P 5200 3475
+F 0 "C?" H 5315 3521 50  0000 L CNN
+F 1 "100N" H 5315 3430 50  0000 L CNN
+F 2 "" H 5238 3325 50  0001 C CNN
+F 3 "~" H 5200 3475 50  0001 C CNN
+	1    5200 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61627917
+P 5200 3775
+AR Path="/6124321F/61627917" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/61627917" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 3525 50  0001 C CNN
+F 1 "GND" H 5205 3602 50  0000 C CNN
+F 2 "" H 5200 3775 50  0001 C CNN
+F 3 "" H 5200 3775 50  0001 C CNN
+	1    5200 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3775 5200 3625
+Wire Wire Line
+	5200 3325 5200 3225
+Connection ~ 5200 3225
+Wire Wire Line
+	5200 3225 5075 3225
+Wire Wire Line
+	8575 3225 8400 3225
+$Comp
+L Device:R R?
+U 1 1 6162AEFF
+P 8125 3225
+AR Path="/6124321F/6162AEFF" Ref="R?"  Part="1" 
+AR Path="/61528830/6162AEFF" Ref="R?"  Part="1" 
+F 0 "R?" V 7918 3225 50  0000 C CNN
+F 1 "1K" V 8009 3225 50  0000 C CNN
+F 2 "" V 8055 3225 50  0001 C CNN
+F 3 "~" H 8125 3225 50  0001 C CNN
+	1    8125 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6162AF0A
+P 8400 3475
+F 0 "C?" H 8515 3521 50  0000 L CNN
+F 1 "100N" H 8515 3430 50  0000 L CNN
+F 2 "" H 8438 3325 50  0001 C CNN
+F 3 "~" H 8400 3475 50  0001 C CNN
+	1    8400 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6162AF14
+P 8400 3775
+AR Path="/6124321F/6162AF14" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/6162AF14" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8400 3525 50  0001 C CNN
+F 1 "GND" H 8405 3602 50  0000 C CNN
+F 2 "" H 8400 3775 50  0001 C CNN
+F 3 "" H 8400 3775 50  0001 C CNN
+	1    8400 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3775 8400 3625
+Wire Wire Line
+	8400 3325 8400 3225
+Connection ~ 8400 3225
+Wire Wire Line
+	8400 3225 8275 3225
+Wire Wire Line
+	7725 3225 7975 3225
+$EndSCHEMATC

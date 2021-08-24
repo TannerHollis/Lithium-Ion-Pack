@@ -1,0 +1,315 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32L1:STM32L151C8UxA U?
+U 1 1 612156AD
+P 9300 3725
+F 0 "U?" H 9900 5450 50  0000 C CNN
+F 1 "STM32L151C8UxA" H 9925 5325 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 8700 2225 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00277537.pdf" H 9300 3725 50  0001 C CNN
+	1    9300 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61216EFB
+P 9250 1950
+F 0 "#PWR?" H 9250 1800 50  0001 C CNN
+F 1 "+3.3V" H 9265 2123 50  0000 C CNN
+F 2 "" H 9250 1950 50  0001 C CNN
+F 3 "" H 9250 1950 50  0001 C CNN
+	1    9250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2125 9100 2025
+Wire Wire Line
+	9100 2025 9200 2025
+Wire Wire Line
+	9400 2025 9400 2125
+Wire Wire Line
+	9300 2125 9300 2025
+Connection ~ 9300 2025
+Wire Wire Line
+	9300 2025 9400 2025
+Wire Wire Line
+	9200 2125 9200 2025
+Connection ~ 9200 2025
+Wire Wire Line
+	9200 2025 9250 2025
+Wire Wire Line
+	9250 2025 9250 1950
+Connection ~ 9250 2025
+Wire Wire Line
+	9250 2025 9300 2025
+$Comp
+L power:GND #PWR?
+U 1 1 61218047
+P 9300 5525
+F 0 "#PWR?" H 9300 5275 50  0001 C CNN
+F 1 "GND" H 9305 5352 50  0000 C CNN
+F 2 "" H 9300 5525 50  0001 C CNN
+F 3 "" H 9300 5525 50  0001 C CNN
+	1    9300 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5325 9100 5450
+Wire Wire Line
+	9100 5450 9200 5450
+Wire Wire Line
+	9300 5450 9300 5525
+Wire Wire Line
+	9300 5450 9400 5450
+Wire Wire Line
+	9500 5450 9500 5325
+Connection ~ 9300 5450
+Wire Wire Line
+	9400 5325 9400 5450
+Connection ~ 9400 5450
+Wire Wire Line
+	9400 5450 9500 5450
+Wire Wire Line
+	9300 5325 9300 5450
+Wire Wire Line
+	9200 5325 9200 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9200 5450 9300 5450
+$Comp
+L Device:Crystal Y?
+U 1 1 612194BF
+P 1825 6725
+F 0 "Y?" H 1825 6993 50  0000 C CNN
+F 1 "8 MHz" H 1825 6902 50  0000 C CNN
+F 2 "" H 1825 6725 50  0001 C CNN
+F 3 "~" H 1825 6725 50  0001 C CNN
+	1    1825 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61219961
+P 2225 7025
+F 0 "C?" H 2340 7071 50  0000 L CNN
+F 1 "30P" H 2340 6980 50  0000 L CNN
+F 2 "" H 2263 6875 50  0001 C CNN
+F 3 "~" H 2225 7025 50  0001 C CNN
+	1    2225 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61219D57
+P 1425 7050
+F 0 "C?" H 1540 7096 50  0000 L CNN
+F 1 "30P" H 1540 7005 50  0000 L CNN
+F 2 "" H 1463 6900 50  0001 C CNN
+F 3 "~" H 1425 7050 50  0001 C CNN
+	1    1425 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 6725 0    50   Input ~ 0
+OSC_IN
+Text GLabel 2300 6725 2    50   Input ~ 0
+OSC_OUT
+Wire Wire Line
+	2225 6725 2225 6875
+Wire Wire Line
+	1975 6725 2225 6725
+Connection ~ 2225 6725
+Wire Wire Line
+	2225 6725 2300 6725
+Wire Wire Line
+	1425 6900 1425 6725
+Wire Wire Line
+	1425 6725 1350 6725
+Wire Wire Line
+	1425 6725 1675 6725
+Connection ~ 1425 6725
+$Comp
+L power:GND #PWR?
+U 1 1 6121CB80
+P 1425 7275
+F 0 "#PWR?" H 1425 7025 50  0001 C CNN
+F 1 "GND" H 1430 7102 50  0000 C CNN
+F 2 "" H 1425 7275 50  0001 C CNN
+F 3 "" H 1425 7275 50  0001 C CNN
+	1    1425 7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 7275 1425 7200
+$Comp
+L power:GND #PWR?
+U 1 1 6121DD2F
+P 2225 7250
+F 0 "#PWR?" H 2225 7000 50  0001 C CNN
+F 1 "GND" H 2230 7077 50  0000 C CNN
+F 2 "" H 2225 7250 50  0001 C CNN
+F 3 "" H 2225 7250 50  0001 C CNN
+	1    2225 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 7250 2225 7175
+Text GLabel 8525 2925 0    50   Input ~ 0
+OSC_IN
+Text GLabel 8525 3025 0    50   Input ~ 0
+OSC_OUT
+Wire Wire Line
+	8525 2925 8600 2925
+Wire Wire Line
+	8600 3025 8525 3025
+$Sheet
+S 1400 4625 1225 1425
+U 6124321F
+F0 "Battery Pack" 50
+F1 "Battery_Pack.sch" 50
+F2 "BALANCE_V4" I L 1400 4800 50 
+F3 "BALANCE_V3" I L 1400 4950 50 
+F4 "BALANCE_V2" I L 1400 5100 50 
+F5 "BALANCE_V1" I L 1400 5250 50 
+F6 "1V_REF" I L 1400 5450 50 
+F7 "V4_SCALED" O R 2625 4800 50 
+F8 "V3_SCALED" O R 2625 4950 50 
+F9 "V2_SCALED" O R 2625 5100 50 
+F10 "V1_SCALED" O R 2625 5250 50 
+F11 "BATT_V4" O R 2625 5450 50 
+F12 "BATT_V3" O R 2625 5600 50 
+F13 "BATT_V2" O R 2625 5750 50 
+F14 "BATT_V1" O R 2625 5900 50 
+$EndSheet
+$Comp
+L Device:R CSR?
+U 1 1 614695BA
+P 4175 3675
+F 0 "CSR?" V 3968 3675 50  0000 C CNN
+F 1 "2L" V 4059 3675 50  0000 C CNN
+F 2 "" V 4105 3675 50  0001 C CNN
+F 3 "~" H 4175 3675 50  0001 C CNN
+F 4 "2L = 2mOhms" V 4175 3675 50  0001 C CNN "Note"
+	1    4175 3675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2775 5600 2625 5600
+Text GLabel 2775 5600 2    50   Output ~ 0
+BATT_V3
+Text GLabel 2775 5450 2    50   Output ~ 0
+BATT_V4
+Text GLabel 2775 5750 2    50   Output ~ 0
+BATT_V2
+Text GLabel 2775 5900 2    50   Output ~ 0
+BATT_V1
+Wire Wire Line
+	2775 5450 2625 5450
+Wire Wire Line
+	2775 5750 2625 5750
+Wire Wire Line
+	2775 5900 2625 5900
+Text GLabel 1250 4800 0    50   Input ~ 0
+BALANCE_V4
+Text GLabel 1250 4950 0    50   Input ~ 0
+BALANCE_V3
+Text GLabel 1250 5100 0    50   Input ~ 0
+BALANCE_V2
+Text GLabel 1250 5250 0    50   Input ~ 0
+BALANCE_V1
+Wire Wire Line
+	1250 4800 1400 4800
+Wire Wire Line
+	1400 4950 1250 4950
+Wire Wire Line
+	1250 5100 1400 5100
+Wire Wire Line
+	1250 5250 1400 5250
+Text GLabel 2775 4800 2    50   Output ~ 0
+V4_SCALED
+Wire Wire Line
+	2775 4800 2625 4800
+Text GLabel 2775 4950 2    50   Output ~ 0
+V3_SCALED
+Text GLabel 2775 5100 2    50   Output ~ 0
+V2_SCALED
+Text GLabel 2775 5250 2    50   Output ~ 0
+V1_SCALED
+Wire Wire Line
+	2625 5250 2775 5250
+Wire Wire Line
+	2775 5100 2625 5100
+Wire Wire Line
+	2775 4950 2625 4950
+$Sheet
+S 4550 4875 1125 900 
+U 61528830
+F0 "Current Sensing/Voltage Reference" 50
+F1 "CSR_VREF.sch" 50
+F2 "V_I_DEV" O R 5675 5000 50 
+F3 "1V65_REF" O R 5675 5600 50 
+F4 "CSR_DEV-" I L 4550 5150 50 
+F5 "CSR_DEV+" I L 4550 5000 50 
+F6 "V_I_BATT" O R 5675 5150 50 
+F7 "1V_REF" O R 5675 5450 50 
+F8 "CSR_BATT-" I L 4550 5600 50 
+F9 "CSR_BATT+" I L 4550 5450 50 
+$EndSheet
+Text GLabel 5825 5000 2    50   Output ~ 0
+I_SENSE_DEV
+Wire Wire Line
+	5825 5000 5675 5000
+Text GLabel 5825 5150 2    50   Output ~ 0
+I_SENSE_BATT
+Wire Wire Line
+	5825 5150 5675 5150
+Text GLabel 5825 5450 2    50   Output ~ 0
+1V_REF
+Text GLabel 5825 5600 2    50   Output ~ 0
+1V65_REF
+Wire Wire Line
+	5675 5450 5825 5450
+Wire Wire Line
+	5825 5600 5675 5600
+Text GLabel 1250 5450 0    50   Input ~ 0
+1V_REF
+Wire Wire Line
+	1250 5450 1400 5450
+$Sheet
+S 4525 6425 1150 1075
+U 615EC351
+F0 "Battery Charger" 50
+F1 "Battery_Charger.sch" 50
+F2 "5V" I L 4525 6575 50 
+F3 "V_CHARGER" O R 5675 6575 50 
+F4 "CHARGER_EN" I L 4525 7225 50 
+F5 "3V3_CHARGER_EN" I L 4525 7075 50 
+F6 "3V3_CHARGER" O R 5675 6750 50 
+$EndSheet
+$Sheet
+S 5175 3125 1050 1125
+U 6166C708
+F0 "Peripherals" 50
+F1 "Peripherals.sch" 50
+F2 "P0A" O R 6225 3225 50 
+F3 "P0W" O R 6225 3350 50 
+F4 "P0B" O R 6225 3475 50 
+F5 "P1A" O R 6225 3650 50 
+F6 "P1W" O R 6225 3775 50 
+F7 "P1B" O R 6225 3900 50 
+F8 "PERIPHERAL_BUS" I L 5175 3225 50 
+$EndSheet
+$EndSCHEMATC
