@@ -59,6 +59,7 @@
 #github
 .gitignore
 .gitattributes
+.md
 
 #Parts Downloads
 /Parts
