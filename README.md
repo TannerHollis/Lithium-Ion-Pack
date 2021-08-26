@@ -59,9 +59,8 @@ The resistor feeding the battery cells is 5 Ohms, which dictates current steps i
 $$I_{charge} = \frac{89.63V}{5\Omega} = 17.93 mA$$
 
 This makes the current granularity small enough to manage on a larger scale and easier to manage from the current regulation PID controller. One thing to note in this setup is that due to the maximum wattage of the resistor of 5W, the device is only capable of sourcing up to 1 Amp into the battery pack. Which results in the following number of maximum voltage steps to the voltage regulator:
+
 $$ n_{volts} = \frac{I_{chg}*R_{chg}}{89.64mV}=\frac{1A*5\Omega}{89.63mV}=55.8 \text{ steps truncated}=55\text{ steps}$$
-
-
 
 TODO:
 
