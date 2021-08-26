@@ -1,0 +1,816 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32L1:STM32L151C8UxA U?
+U 1 1 612156AD
+P 9250 2850
+F 0 "U?" H 9850 4575 50  0000 C CNN
+F 1 "STM32L151C8UxA" H 9875 4450 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 8650 1350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00277537.pdf" H 9250 2850 50  0001 C CNN
+	1    9250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61216EFB
+P 9200 1075
+F 0 "#PWR?" H 9200 925 50  0001 C CNN
+F 1 "+3.3V" H 9215 1248 50  0000 C CNN
+F 2 "" H 9200 1075 50  0001 C CNN
+F 3 "" H 9200 1075 50  0001 C CNN
+	1    9200 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1250 9050 1150
+Wire Wire Line
+	9050 1150 9150 1150
+Wire Wire Line
+	9350 1150 9350 1250
+Wire Wire Line
+	9250 1250 9250 1150
+Connection ~ 9250 1150
+Wire Wire Line
+	9250 1150 9350 1150
+Wire Wire Line
+	9150 1250 9150 1150
+Connection ~ 9150 1150
+Wire Wire Line
+	9150 1150 9200 1150
+Wire Wire Line
+	9200 1150 9200 1075
+Connection ~ 9200 1150
+Wire Wire Line
+	9200 1150 9250 1150
+$Comp
+L power:GND #PWR?
+U 1 1 61218047
+P 9250 4650
+F 0 "#PWR?" H 9250 4400 50  0001 C CNN
+F 1 "GND" H 9255 4477 50  0000 C CNN
+F 2 "" H 9250 4650 50  0001 C CNN
+F 3 "" H 9250 4650 50  0001 C CNN
+	1    9250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4450 9050 4575
+Wire Wire Line
+	9050 4575 9150 4575
+Wire Wire Line
+	9250 4575 9250 4650
+Wire Wire Line
+	9250 4575 9350 4575
+Wire Wire Line
+	9450 4575 9450 4450
+Connection ~ 9250 4575
+Wire Wire Line
+	9350 4450 9350 4575
+Connection ~ 9350 4575
+Wire Wire Line
+	9350 4575 9450 4575
+Wire Wire Line
+	9250 4450 9250 4575
+Wire Wire Line
+	9150 4450 9150 4575
+Connection ~ 9150 4575
+Wire Wire Line
+	9150 4575 9250 4575
+$Comp
+L Device:Crystal Y?
+U 1 1 612194BF
+P 9250 5400
+F 0 "Y?" H 9250 5668 50  0000 C CNN
+F 1 "8 MHz" H 9250 5577 50  0000 C CNN
+F 2 "" H 9250 5400 50  0001 C CNN
+F 3 "~" H 9250 5400 50  0001 C CNN
+	1    9250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61219961
+P 9650 5700
+F 0 "C?" H 9765 5746 50  0000 L CNN
+F 1 "30P" H 9765 5655 50  0000 L CNN
+F 2 "" H 9688 5550 50  0001 C CNN
+F 3 "~" H 9650 5700 50  0001 C CNN
+	1    9650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61219D57
+P 8850 5725
+F 0 "C?" H 8965 5771 50  0000 L CNN
+F 1 "30P" H 8965 5680 50  0000 L CNN
+F 2 "" H 8888 5575 50  0001 C CNN
+F 3 "~" H 8850 5725 50  0001 C CNN
+	1    8850 5725
+	1    0    0    -1  
+$EndComp
+Text GLabel 8775 5400 0    50   Input ~ 0
+OSC_IN
+Text GLabel 9725 5400 2    50   Input ~ 0
+OSC_OUT
+Wire Wire Line
+	9650 5400 9650 5550
+Wire Wire Line
+	9400 5400 9650 5400
+Connection ~ 9650 5400
+Wire Wire Line
+	9650 5400 9725 5400
+Wire Wire Line
+	8850 5575 8850 5400
+Wire Wire Line
+	8850 5400 8775 5400
+Wire Wire Line
+	8850 5400 9100 5400
+Connection ~ 8850 5400
+$Comp
+L power:GND #PWR?
+U 1 1 6121CB80
+P 8850 5950
+F 0 "#PWR?" H 8850 5700 50  0001 C CNN
+F 1 "GND" H 8855 5777 50  0000 C CNN
+F 2 "" H 8850 5950 50  0001 C CNN
+F 3 "" H 8850 5950 50  0001 C CNN
+	1    8850 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5950 8850 5875
+$Comp
+L power:GND #PWR?
+U 1 1 6121DD2F
+P 9650 5925
+F 0 "#PWR?" H 9650 5675 50  0001 C CNN
+F 1 "GND" H 9655 5752 50  0000 C CNN
+F 2 "" H 9650 5925 50  0001 C CNN
+F 3 "" H 9650 5925 50  0001 C CNN
+	1    9650 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5925 9650 5850
+Text GLabel 8475 2050 0    50   Input ~ 0
+OSC_IN
+Text GLabel 8475 2150 0    50   Input ~ 0
+OSC_OUT
+Wire Wire Line
+	8475 2050 8550 2050
+Wire Wire Line
+	8550 2150 8475 2150
+$Comp
+L Device:R CSR?
+U 1 1 614695BA
+P 4525 1550
+F 0 "CSR?" V 4318 1550 50  0000 C CNN
+F 1 "5R" V 4409 1550 50  0000 C CNN
+F 2 "" V 4455 1550 50  0001 C CNN
+F 3 "~" H 4525 1550 50  0001 C CNN
+F 4 "5W, 1Amps max" V 4525 1550 50  0001 C CNN "Note"
+	1    4525 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3300 4150 3300
+Text GLabel 4300 3300 2    50   Output ~ 0
+BATT_V3
+Text GLabel 5075 3200 2    50   Output ~ 0
+BATT_V4
+Text GLabel 4300 3400 2    50   Output ~ 0
+BATT_V2
+Text GLabel 4300 3500 2    50   Output ~ 0
+BATT_V1
+Wire Wire Line
+	5075 3200 4825 3200
+Wire Wire Line
+	4300 3400 4150 3400
+Wire Wire Line
+	4300 3500 4150 3500
+Text GLabel 2775 3200 0    50   Input ~ 0
+BALANCE_V4
+Text GLabel 2775 3300 0    50   Input ~ 0
+BALANCE_V3
+Text GLabel 2775 3400 0    50   Input ~ 0
+BALANCE_V2
+Text GLabel 2775 3500 0    50   Input ~ 0
+BALANCE_V1
+Wire Wire Line
+	2775 3200 2925 3200
+Wire Wire Line
+	2925 3300 2775 3300
+Wire Wire Line
+	2775 3400 2925 3400
+Wire Wire Line
+	2775 3500 2925 3500
+Text GLabel 4300 3850 2    50   Output ~ 0
+V4_SCALED
+Wire Wire Line
+	4300 3850 4150 3850
+Text GLabel 4300 3950 2    50   Output ~ 0
+V3_SCALED
+Text GLabel 4300 4050 2    50   Output ~ 0
+V2_SCALED
+Text GLabel 4300 4150 2    50   Output ~ 0
+V1_SCALED
+Wire Wire Line
+	4150 4150 4300 4150
+Wire Wire Line
+	4300 4050 4150 4050
+Wire Wire Line
+	4300 3950 4150 3950
+$Sheet
+S 5900 4375 1050 1575
+U 6166C708
+F0 "Peripherals" 50
+F1 "Peripherals.sch" 50
+F2 "P0A" O R 6950 4475 50 
+F3 "P0W" O R 6950 4575 50 
+F4 "P0B" O R 6950 4675 50 
+F5 "P1A" O R 6950 4875 50 
+F6 "P1W" O R 6950 4975 50 
+F7 "P1B" O R 6950 5075 50 
+F8 "PERIPHERAL_BUS" I L 5900 4475 50 
+F9 "P2A" O R 6950 5250 50 
+F10 "P2W" O R 6950 5350 50 
+F11 "P2B" O R 6950 5450 50 
+F12 "P3A" O R 6950 5625 50 
+F13 "P3W" O R 6950 5725 50 
+F14 "P3B" O R 6950 5825 50 
+$EndSheet
+$Sheet
+S 2975 1400 1150 1300
+U 615EC351
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "5V" I L 2975 1550 50 
+F3 "V_CHARGER" O R 4125 1550 50 
+F4 "CHARGER_EN" I L 2975 1650 50 
+F5 "V_BATT" I L 2975 2325 50 
+F6 "VREG_EN" I L 2975 2425 50 
+F7 "3V3" O R 4125 2325 50 
+F8 "ON_SWITCH" I L 2975 2525 50 
+F9 "P2W" I L 2975 1975 50 
+F10 "P2B" I L 2975 2075 50 
+$EndSheet
+Wire Wire Line
+	2825 2325 2975 2325
+Text GLabel 4550 5400 2    50   Output ~ 0
+VREF_1V65
+Text GLabel 4550 4950 2    50   Output ~ 0
+I_BATT
+Text GLabel 4550 4850 2    50   Output ~ 0
+I_CHG
+$Sheet
+S 2725 4725 1625 1425
+U 61528830
+F0 "Current Sensing/Voltage Reference" 50
+F1 "CSR_VREF.sch" 50
+F2 "I_CHG" O R 4350 4850 50 
+F3 "1V65_REF" O R 4350 5400 50 
+F4 "CSR_CHG-" I L 2725 4950 50 
+F5 "CSR_CHG+" I L 2725 4850 50 
+F6 "I_BATT" O R 4350 4950 50 
+F7 "1V_REF" O R 4350 5300 50 
+F8 "CSR_BATT-" I L 2725 5300 50 
+F9 "CSR_BATT+" I L 2725 5200 50 
+F10 "P0A" I L 2725 5500 50 
+F11 "P0W" I L 2725 5600 50 
+F12 "P0B" I L 2725 5700 50 
+F13 "P1A" I L 2725 5800 50 
+F14 "P1W" I L 2725 5900 50 
+F15 "P1B" I L 2725 6000 50 
+$EndSheet
+Text GLabel 2775 3850 0    50   Input ~ 0
+VREF_1V
+Wire Wire Line
+	2775 3850 2925 3850
+Text GLabel 4550 5300 2    50   Output ~ 0
+VREF_1V
+$Sheet
+S 1000 1375 825  750 
+U 6198CA67
+F0 "USB POWER" 50
+F1 "USB_POWER.sch" 50
+F2 "5V" O R 1825 1550 50 
+F3 "USB_D-" O R 1825 1850 50 
+F4 "USB_D+" O R 1825 1950 50 
+$EndSheet
+Wire Wire Line
+	1825 1550 2975 1550
+$Sheet
+S 2925 3025 1225 1300
+U 6124321F
+F0 "Battery Pack" 50
+F1 "Battery_Pack.sch" 50
+F2 "BALANCE_V4" I L 2925 3200 50 
+F3 "BALANCE_V3" I L 2925 3300 50 
+F4 "BALANCE_V2" I L 2925 3400 50 
+F5 "BALANCE_V1" I L 2925 3500 50 
+F6 "1V_REF" I L 2925 3850 50 
+F7 "V4_SCALED" O R 4150 3850 50 
+F8 "V3_SCALED" O R 4150 3950 50 
+F9 "V2_SCALED" O R 4150 4050 50 
+F10 "V1_SCALED" O R 4150 4150 50 
+F11 "BATT_V4" O R 4150 3200 50 
+F12 "BATT_V3" O R 4150 3300 50 
+F13 "BATT_V2" O R 4150 3400 50 
+F14 "BATT_V1" O R 4150 3500 50 
+$EndSheet
+$Comp
+L Device:R CSR?
+U 1 1 619C9586
+P 4825 2325
+F 0 "CSR?" H 4755 2279 50  0000 R CNN
+F 1 "2L" H 4755 2370 50  0000 R CNN
+F 2 "" V 4755 2325 50  0001 C CNN
+F 3 "~" H 4825 2325 50  0001 C CNN
+F 4 "2L = 2mOhms" V 4825 2325 50  0001 C CNN "Note"
+	1    4825 2325
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4125 1550 4250 1550
+Wire Wire Line
+	4675 1550 4825 1550
+Wire Wire Line
+	4825 1550 4825 2175
+Wire Wire Line
+	4825 2475 4825 3200
+Connection ~ 4825 3200
+Wire Wire Line
+	4825 3200 4150 3200
+Wire Wire Line
+	4350 4850 4550 4850
+Wire Wire Line
+	4550 4950 4350 4950
+Wire Wire Line
+	4350 5300 4550 5300
+Wire Wire Line
+	4550 5400 4350 5400
+Text GLabel 5300 1175 2    50   Output ~ 0
+V_BATT
+Connection ~ 4825 1550
+Text GLabel 4325 1175 2    50   Output ~ 0
+CSR_CHG+
+Wire Wire Line
+	4325 1175 4250 1175
+Wire Wire Line
+	4250 1175 4250 1550
+Connection ~ 4250 1550
+Wire Wire Line
+	4250 1550 4375 1550
+Text GLabel 2525 5200 0    50   Input ~ 0
+BATT_V4
+Wire Wire Line
+	2525 5200 2725 5200
+Text GLabel 2525 5300 0    50   Input ~ 0
+V_BATT
+Wire Wire Line
+	2525 5300 2725 5300
+Text GLabel 2525 4850 0    50   Input ~ 0
+CSR_CHG+
+Wire Wire Line
+	2525 4850 2725 4850
+Text GLabel 2525 4950 0    50   Input ~ 0
+V_BATT
+Wire Wire Line
+	2525 4950 2725 4950
+Text GLabel 2825 2325 0    50   Input ~ 0
+V_BATT
+Wire Wire Line
+	2825 1650 2975 1650
+Text GLabel 2825 1650 0    50   Input ~ 0
+CHG_EN
+Wire Wire Line
+	2825 1975 2975 1975
+Text GLabel 2825 1975 0    50   Input ~ 0
+P2W
+Wire Wire Line
+	2825 2075 2975 2075
+Text GLabel 2825 2075 0    50   Input ~ 0
+P2B
+Wire Wire Line
+	2825 2425 2975 2425
+Text GLabel 2825 2425 0    50   Input ~ 0
+VREG_EN
+Text GLabel 2825 2525 0    50   Input ~ 0
+ON_SWITCH
+Wire Wire Line
+	2825 2525 2975 2525
+$Comp
+L power:+3.3V #PWR?
+U 1 1 619F207B
+P 4275 2275
+F 0 "#PWR?" H 4275 2125 50  0001 C CNN
+F 1 "+3.3V" H 4290 2448 50  0000 C CNN
+F 2 "" H 4275 2275 50  0001 C CNN
+F 3 "" H 4275 2275 50  0001 C CNN
+	1    4275 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 2275 4275 2325
+Wire Wire Line
+	4275 2325 4125 2325
+Wire Wire Line
+	7100 4475 6950 4475
+Text GLabel 7100 4475 2    50   Output ~ 0
+P0A
+Wire Wire Line
+	7100 4575 6950 4575
+Text GLabel 7100 4575 2    50   Output ~ 0
+P0W
+Wire Wire Line
+	7100 4675 6950 4675
+Text GLabel 7100 4675 2    50   Output ~ 0
+P0B
+Wire Wire Line
+	7100 4875 6950 4875
+Text GLabel 7100 4875 2    50   Output ~ 0
+P1A
+Wire Wire Line
+	7100 4975 6950 4975
+Text GLabel 7100 4975 2    50   Output ~ 0
+P1W
+Wire Wire Line
+	7100 5075 6950 5075
+Text GLabel 7100 5075 2    50   Output ~ 0
+P1B
+Wire Wire Line
+	7100 5350 6950 5350
+Text GLabel 7100 5350 2    50   Output ~ 0
+P2W
+Wire Wire Line
+	7100 5450 6950 5450
+Text GLabel 7100 5450 2    50   Output ~ 0
+P2B
+NoConn ~ 6950 5250
+Text GLabel 2525 5500 0    50   Input ~ 0
+P0A
+Text GLabel 2525 5600 0    50   Input ~ 0
+P0W
+Text GLabel 2525 5700 0    50   Input ~ 0
+P0B
+Text GLabel 2525 5800 0    50   Input ~ 0
+P1A
+Text GLabel 2525 5900 0    50   Input ~ 0
+P1W
+Text GLabel 2525 6000 0    50   Input ~ 0
+P1B
+Wire Wire Line
+	2525 5500 2725 5500
+Wire Wire Line
+	2525 5600 2725 5600
+Wire Wire Line
+	2525 5700 2725 5700
+Wire Wire Line
+	2525 5800 2725 5800
+Wire Wire Line
+	2525 5900 2725 5900
+Wire Wire Line
+	2525 6000 2725 6000
+NoConn ~ 6950 5625
+NoConn ~ 6950 5725
+NoConn ~ 6950 5825
+Text GLabel 2150 1850 2    50   Input ~ 0
+USB_D-
+Text GLabel 2150 1950 2    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	2150 1850 1825 1850
+Wire Wire Line
+	2150 1950 1825 1950
+Text GLabel 10025 2750 2    50   Input ~ 0
+V4_SCALED
+Text GLabel 10025 2850 2    50   Input ~ 0
+V3_SCALED
+Text GLabel 10025 2950 2    50   Input ~ 0
+V2_SCALED
+Text GLabel 10025 3050 2    50   Input ~ 0
+V1_SCALED
+Text GLabel 10025 3150 2    50   Input ~ 0
+I_CHG
+Text GLabel 10025 3250 2    50   Input ~ 0
+I_BATT
+Text GLabel 10025 3350 2    50   Input ~ 0
+VREF_1V
+Text GLabel 10025 3450 2    50   Input ~ 0
+VREF_1V65
+Text GLabel 8375 2750 0    50   Input ~ 0
+ADC_IN8
+Wire Wire Line
+	9850 2750 10025 2750
+Wire Wire Line
+	9850 2850 10025 2850
+Wire Wire Line
+	9850 2950 10025 2950
+Wire Wire Line
+	9850 3050 10025 3050
+Wire Wire Line
+	9850 3150 10025 3150
+Wire Wire Line
+	9850 3250 10025 3250
+Wire Wire Line
+	9850 3350 10025 3350
+Wire Wire Line
+	9850 3450 10025 3450
+Wire Wire Line
+	8550 2750 8375 2750
+Text GLabel 8375 4050 0    50   Output ~ 0
+BALANCE_V1
+Wire Wire Line
+	8550 4050 8375 4050
+Text GLabel 8375 4150 0    50   Output ~ 0
+BALANCE_V2
+Wire Wire Line
+	8550 4150 8375 4150
+Text GLabel 8375 4250 0    50   Output ~ 0
+BALANCE_V3
+Wire Wire Line
+	8550 4250 8375 4250
+Text GLabel 10025 3550 2    50   Output ~ 0
+BALANCE_V4
+Wire Wire Line
+	9850 3550 10025 3550
+Text GLabel 10025 4050 2    50   BiDi ~ 0
+SWDIO
+Text GLabel 10025 4150 2    50   Output ~ 0
+SWCLK
+Wire Wire Line
+	9850 4050 10025 4050
+Wire Wire Line
+	9850 4150 10025 4150
+Entry Wire Line
+	7750 3150 7850 3250
+Entry Wire Line
+	7750 3050 7850 3150
+Entry Wire Line
+	7750 3250 7850 3350
+Entry Wire Line
+	7750 3350 7850 3450
+Entry Wire Line
+	7750 2950 7850 3050
+Wire Bus Line
+	7750 2950 7650 2950
+Text GLabel 7650 2950 0    50   Output ~ 0
+PERIPHERAL_BUS
+Text Label 7850 3050 0    50   ~ 0
+SPI1_CLK
+Text Label 7850 3150 0    50   ~ 0
+SPI1_MISO
+Text Label 7850 3250 0    50   ~ 0
+SPI1_MOSI
+Text Label 7850 3350 0    50   ~ 0
+~RESET~_MCP4351
+Text Label 7850 3450 0    50   ~ 0
+~CS~_MCP4351
+Wire Wire Line
+	7850 3050 8550 3050
+Wire Wire Line
+	8550 3150 7850 3150
+Wire Wire Line
+	7850 3250 8550 3250
+Wire Wire Line
+	8550 3350 7850 3350
+Wire Wire Line
+	8550 3450 7850 3450
+Text GLabel 8375 3750 0    50   Output ~ 0
+ON_SWITCH
+Wire Wire Line
+	8375 3750 8550 3750
+Text GLabel 8375 3850 0    50   Output ~ 0
+V_REG_EN
+Wire Wire Line
+	8375 3850 8550 3850
+Text GLabel 5725 4475 0    50   Input ~ 0
+PERIPHERAL_BUS
+Wire Wire Line
+	5725 4475 5900 4475
+NoConn ~ 8550 2350
+NoConn ~ 8550 2450
+NoConn ~ 8550 2550
+NoConn ~ 8550 3550
+NoConn ~ 8550 3950
+Text GLabel 10025 3850 2    50   BiDi ~ 0
+USB_D-
+Text GLabel 10025 3950 2    50   BiDi ~ 0
+USB_D+
+Wire Wire Line
+	9850 3850 10025 3850
+Wire Wire Line
+	9850 3950 10025 3950
+NoConn ~ 9850 4250
+NoConn ~ 8550 2850
+NoConn ~ 8550 2950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61BA5357
+P 8400 1450
+F 0 "TP?" V 8595 1522 50  0000 C CNN
+F 1 "TestPoint" V 8504 1522 50  0000 C CNN
+F 2 "" H 8600 1450 50  0001 C CNN
+F 3 "~" H 8600 1450 50  0001 C CNN
+	1    8400 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 1450 8550 1450
+$Comp
+L power:GND #PWR?
+U 1 1 61BAA125
+P 8375 1650
+F 0 "#PWR?" H 8375 1400 50  0001 C CNN
+F 1 "GND" H 8380 1477 50  0000 C CNN
+F 2 "" H 8375 1650 50  0001 C CNN
+F 3 "" H 8375 1650 50  0001 C CNN
+	1    8375 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8375 1650 8550 1650
+NoConn ~ 8550 1850
+Text GLabel 10025 3650 2    50   Output ~ 0
+UART1_TX
+Text GLabel 10025 3750 2    50   Input ~ 0
+UART1_RX
+Wire Wire Line
+	10025 3750 9850 3750
+Wire Wire Line
+	10025 3650 9850 3650
+Wire Wire Line
+	5925 1550 6175 1550
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 612D47AE
+P 5725 1650
+F 0 "Q?" V 6067 1650 50  0000 C CNN
+F 1 "Q_PMOS_DGS" V 5976 1650 50  0000 C CNN
+F 2 "" H 5925 1750 50  0001 C CNN
+F 3 "~" H 5725 1650 50  0001 C CNN
+	1    5725 1650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612DA9A4
+P 5375 1925
+F 0 "R?" V 5168 1925 50  0000 C CNN
+F 1 "1K" V 5259 1925 50  0000 C CNN
+F 2 "" V 5305 1925 50  0001 C CNN
+F 3 "~" H 5375 1925 50  0001 C CNN
+	1    5375 1925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5525 1925 5725 1925
+Wire Wire Line
+	5725 1925 5725 1850
+Wire Wire Line
+	5225 1925 5175 1925
+Wire Wire Line
+	5175 1925 5175 1550
+Connection ~ 5175 1550
+Wire Wire Line
+	5175 1550 5525 1550
+Wire Wire Line
+	5300 1175 5175 1175
+Wire Wire Line
+	5175 1175 5175 1550
+Wire Wire Line
+	4825 1550 5175 1550
+Text GLabel 6175 1550 2    50   Output ~ 0
+V_BATT_OUT
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 61323A23
+P 5825 2300
+F 0 "Q?" H 5900 2050 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 5900 1975 50  0000 R CNN
+F 2 "" H 6025 2400 50  0001 C CNN
+F 3 "~" H 5825 2300 50  0001 C CNN
+	1    5825 2300
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5725 1925
+$Comp
+L power:GND #PWR?
+U 1 1 61330C0B
+P 5725 2825
+F 0 "#PWR?" H 5725 2575 50  0001 C CNN
+F 1 "GND" H 5730 2652 50  0000 C CNN
+F 2 "" H 5725 2825 50  0001 C CNN
+F 3 "" H 5725 2825 50  0001 C CNN
+	1    5725 2825
+	1    0    0    -1  
+$EndComp
+Text GLabel 8375 3650 0    50   Output ~ 0
+V_BATT_ON
+Wire Wire Line
+	8375 3650 8550 3650
+Text GLabel 7225 2300 2    50   Input ~ 0
+V_BATT_ON
+Wire Wire Line
+	7225 2300 7175 2300
+Wire Wire Line
+	5725 2500 5725 2825
+Wire Wire Line
+	5725 1925 5725 2100
+$Comp
+L Device:R R?
+U 1 1 613886FF
+P 6975 2300
+F 0 "R?" H 6905 2254 50  0000 R CNN
+F 1 "100K" H 6905 2345 50  0000 R CNN
+F 2 "" V 6905 2300 50  0001 C CNN
+F 3 "~" H 6975 2300 50  0001 C CNN
+F 4 "2L = 2mOhms" V 6975 2300 50  0001 C CNN "Note"
+	1    6975 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613893C0
+P 6975 2125
+F 0 "R?" H 6905 2079 50  0000 R CNN
+F 1 "10R" H 6905 2170 50  0000 R CNN
+F 2 "" V 6905 2125 50  0001 C CNN
+F 3 "~" H 6975 2125 50  0001 C CNN
+F 4 "2L = 2mOhms" V 6975 2125 50  0001 C CNN "Note"
+	1    6975 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6138B38D
+P 6375 2575
+F 0 "C?" H 6490 2621 50  0000 L CNN
+F 1 "10U" H 6490 2530 50  0000 L CNN
+F 2 "" H 6413 2425 50  0001 C CNN
+F 3 "~" H 6375 2575 50  0001 C CNN
+	1    6375 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 2425 6375 2300
+$Comp
+L power:GND #PWR?
+U 1 1 61397B69
+P 6375 2825
+F 0 "#PWR?" H 6375 2575 50  0001 C CNN
+F 1 "GND" H 6380 2652 50  0000 C CNN
+F 2 "" H 6375 2825 50  0001 C CNN
+F 3 "" H 6375 2825 50  0001 C CNN
+	1    6375 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 2825 6375 2725
+Wire Wire Line
+	7175 2300 7175 2125
+Wire Wire Line
+	7175 2125 7125 2125
+Connection ~ 7175 2300
+Wire Wire Line
+	7175 2300 7125 2300
+Connection ~ 6375 2300
+Wire Wire Line
+	6375 2300 6025 2300
+Wire Wire Line
+	6375 2300 6825 2300
+$Comp
+L Device:D D?
+U 1 1 613C4EAF
+P 6600 2125
+F 0 "D?" H 6600 2342 50  0000 C CNN
+F 1 "D" H 6600 2251 50  0000 C CNN
+F 2 "" H 6600 2125 50  0001 C CNN
+F 3 "~" H 6600 2125 50  0001 C CNN
+	1    6600 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2125 6375 2125
+Wire Wire Line
+	6375 2125 6375 2300
+Wire Wire Line
+	6750 2125 6825 2125
+Wire Bus Line
+	7750 2950 7750 3350
+$EndSCHEMATC
