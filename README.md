@@ -14,6 +14,7 @@ This battery pack is able to charge via a USB-C type port, which is a standard U
 
 Since the resistor network can be controlled by a resistor network, I propose controlling the output voltage through the use of a digital potentiometer, [MCP4351](http://ww1.microchip.com/downloads/en/DeviceDoc/22242A.pdf). This device is essentially a digitally controlled resistor divider through SPI communications. When calculating the possible output voltages using only the resistor divider network, the following equation dictates the output voltage *(datasheet, pg. 6)*:
 
+<img src="https://bit.ly/3zn4I0b" align="center" border="0" alt="$$V_{out} = (\frac{R_1}{R_2} + 1) * 1.262$$" width="194" height="28" />
 $$V_{out} = (\frac{R_1}{R_2} + 1) * 1.262$$
 
 The MCP4351 has a total different number of 257 different positions or "taps" that the potentiometer can place the "wiper". The resistor divider network's is calculated as follows *(datasheet, pg. 43)*:
