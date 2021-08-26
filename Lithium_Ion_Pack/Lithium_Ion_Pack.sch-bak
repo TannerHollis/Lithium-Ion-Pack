@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -263,7 +263,7 @@ F2 "5V" I L 2975 1550 50
 F3 "V_CHARGER" O R 4125 1550 50 
 F4 "CHARGER_EN" I L 2975 1650 50 
 F5 "V_BATT" I L 2975 2325 50 
-F6 "3V3_DEV_EN" I L 2975 2425 50 
+F6 "VREG_EN" I L 2975 2425 50 
 F7 "3V3" O R 4125 2325 50 
 F8 "ON_SWITCH" I L 2975 2525 50 
 F9 "P2W" I L 2975 1975 50 
@@ -364,15 +364,10 @@ Wire Wire Line
 	4350 5300 4550 5300
 Wire Wire Line
 	4550 5400 4350 5400
-Text GLabel 4950 1550 2    50   Output ~ 0
-V_BATT
-Connection ~ 4825 1550
-Wire Wire Line
-	4825 1550 4950 1550
-Text GLabel 4400 1175 2    50   Output ~ 0
+Text GLabel 4325 1175 2    50   Output ~ 0
 CSR_CHG+
 Wire Wire Line
-	4400 1175 4250 1175
+	4325 1175 4250 1175
 Wire Wire Line
 	4250 1175 4250 1550
 Connection ~ 4250 1550
@@ -411,7 +406,7 @@ P2B
 Wire Wire Line
 	2825 2425 2975 2425
 Text GLabel 2825 2425 0    50   Input ~ 0
-3V3_DEV_EN
+VREG_EN
 Text GLabel 2825 2525 0    50   Input ~ 0
 ON_SWITCH
 Wire Wire Line
@@ -535,25 +530,25 @@ Wire Wire Line
 	9850 3450 10025 3450
 Wire Wire Line
 	8550 2750 8375 2750
-Text GLabel 8375 4050 0    50   Input ~ 0
+Text GLabel 8375 4050 0    50   Output ~ 0
 BALANCE_V1
 Wire Wire Line
 	8550 4050 8375 4050
-Text GLabel 8375 4150 0    50   Input ~ 0
+Text GLabel 8375 4150 0    50   Output ~ 0
 BALANCE_V2
 Wire Wire Line
 	8550 4150 8375 4150
-Text GLabel 8375 4250 0    50   Input ~ 0
+Text GLabel 8375 4250 0    50   Output ~ 0
 BALANCE_V3
 Wire Wire Line
 	8550 4250 8375 4250
-Text GLabel 10025 3550 2    50   Input ~ 0
+Text GLabel 10025 3550 2    50   Output ~ 0
 BALANCE_V4
 Wire Wire Line
 	9850 3550 10025 3550
-Text GLabel 10025 4050 2    50   Input ~ 0
+Text GLabel 10025 4050 2    50   BiDi ~ 0
 SWDIO
-Text GLabel 10025 4150 2    50   Input ~ 0
+Text GLabel 10025 4150 2    50   Output ~ 0
 SWCLK
 Wire Wire Line
 	9850 4050 10025 4050
@@ -593,11 +588,11 @@ Wire Wire Line
 	8550 3350 7850 3350
 Wire Wire Line
 	8550 3450 7850 3450
-Text GLabel 8375 3750 0    50   Input ~ 0
+Text GLabel 8375 3750 0    50   Output ~ 0
 ON_SWITCH
 Wire Wire Line
 	8375 3750 8550 3750
-Text GLabel 8375 3850 0    50   Input ~ 0
+Text GLabel 8375 3850 0    50   Output ~ 0
 V_REG_EN
 Wire Wire Line
 	8375 3850 8550 3850
@@ -609,11 +604,10 @@ NoConn ~ 8550 2350
 NoConn ~ 8550 2450
 NoConn ~ 8550 2550
 NoConn ~ 8550 3550
-NoConn ~ 8550 3650
 NoConn ~ 8550 3950
-Text GLabel 10025 3850 2    50   Input ~ 0
+Text GLabel 10025 3850 2    50   BiDi ~ 0
 USB_D-
-Text GLabel 10025 3950 2    50   Input ~ 0
+Text GLabel 10025 3950 2    50   BiDi ~ 0
 USB_D+
 Wire Wire Line
 	9850 3850 10025 3850
@@ -649,7 +643,7 @@ $EndComp
 Wire Wire Line
 	8375 1650 8550 1650
 NoConn ~ 8550 1850
-Text GLabel 10025 3650 2    50   Input ~ 0
+Text GLabel 10025 3650 2    50   Output ~ 0
 UART1_TX
 Text GLabel 10025 3750 2    50   Input ~ 0
 UART1_RX
@@ -657,6 +651,30 @@ Wire Wire Line
 	10025 3750 9850 3750
 Wire Wire Line
 	10025 3650 9850 3650
+Text GLabel 8375 3650 0    50   Output ~ 0
+V_OUT_EN
+Wire Wire Line
+	8375 3650 8550 3650
+$Sheet
+S 5475 1475 1050 425 
+U 613DC194
+F0 "Protection Circuit" 50
+F1 "Protection_Circuit.sch" 50
+F2 "V_BATT" I L 5475 1550 50 
+F3 "V_OUT_EN" I L 5475 1775 50 
+F4 "V_OUT" O R 6525 1550 50 
+$EndSheet
+Wire Wire Line
+	4825 1550 5475 1550
+Connection ~ 4825 1550
+Text GLabel 5350 1775 0    50   Input ~ 0
+V_OUT_EN
+Wire Wire Line
+	5350 1775 5475 1775
+Text GLabel 6650 1550 2    50   Output ~ 0
+V_OUT
+Wire Wire Line
+	6650 1550 6525 1550
 Wire Bus Line
 	7750 2950 7750 3350
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -69,17 +69,6 @@ Wire Wire Line
 	3675 1825 3675 2300
 Wire Wire Line
 	3675 2300 3525 2300
-$Comp
-L Device:D D?
-U 1 1 615EECF0
-P 3950 1825
-F 0 "D?" H 3950 1608 50  0000 C CNN
-F 1 "D" H 3950 1699 50  0000 C CNN
-F 2 "" H 3950 1825 50  0001 C CNN
-F 3 "~" H 3950 1825 50  0001 C CNN
-	1    3950 1825
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3675 1825 3800 1825
 Connection ~ 3675 1825
@@ -824,4 +813,15 @@ Wire Wire Line
 Connection ~ 4250 2500
 Wire Wire Line
 	4250 2500 4350 2500
+$Comp
+L Device:D_Schottky D?
+U 1 1 613DA681
+P 3950 1825
+F 0 "D?" H 3950 2042 50  0000 C CNN
+F 1 "D_Schottky" H 3950 1951 50  0000 C CNN
+F 2 "" H 3950 1825 50  0001 C CNN
+F 3 "~" H 3950 1825 50  0001 C CNN
+	1    3950 1825
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
