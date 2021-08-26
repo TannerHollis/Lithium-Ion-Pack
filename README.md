@@ -10,7 +10,7 @@ I have used many battery charging Integrated Circuits in the past and have never
 
 This battery pack is able to charge via a USB-C type port, which is a standard USB2.0 port used for Virtual Communications over USB. Since it's a standard USB2.0 connector inside of USB-C, only 5V is input to the device. The included Boost converter then steps-up the voltage through the [PAM2423](https://www.diodes.com/assets/Datasheets/PAM2421_22_23.pdf) DC-DC step-up voltage regulator. While this step-up regulator is capable of producing output voltages of up to 24V, the circuit is controlled by the feedback resistor network.
 
-![PAM2423 Typical Application Diagram](https://ibb.co/DMn46kj)
+![PAM2423 Typical Application Diagram](insert_HTML_link)
 
 Since the resistor network can be controlled by a resistor network, I propose controlling the output voltage through the use of a digital potentiometer, [MCP4351](http://ww1.microchip.com/downloads/en/DeviceDoc/22242A.pdf). This device is essentially a digitally controlled resistor divider through SPI communications. When calculating the possible output voltages using only the resistor divider network, the following equation dictates the output voltage *(datasheet, pg. 6)*:
 
