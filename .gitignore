@@ -56,3 +56,11 @@
 
 # Netlist
 *.net
+
+#github
+.gitignore
+.gitattributes
+
+#Parts Downloads
+/Parts
+/Datasheets
