@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Connection ~ 7725 3225
 Text HLabel 8575 3225 2    50   Output ~ 0
-V_I_DEV
+I_CHG
 Wire Wire Line
 	7725 3225 7625 3225
 Wire Wire Line
@@ -29,7 +29,7 @@ P 7325 2575
 AR Path="/6124321F/61570D35" Ref="R?"  Part="1" 
 AR Path="/61528830/61570D35" Ref="R?"  Part="1" 
 F 0 "R?" V 7118 2575 50  0000 C CNN
-F 1 "165K" V 7209 2575 50  0000 C CNN
+F 1 "82K5" V 7209 2575 50  0000 C CNN
 F 2 "" V 7255 2575 50  0001 C CNN
 F 3 "~" H 7325 2575 50  0001 C CNN
 	1    7325 2575
@@ -37,7 +37,7 @@ F 3 "~" H 7325 2575 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6325 3725 6925 3725
-Text HLabel 6325 3725 0    50   Output ~ 0
+Text HLabel 6325 3725 0    50   Input ~ 0
 1V65_REF
 Wire Wire Line
 	6925 3725 6925 3675
@@ -46,9 +46,9 @@ Wire Wire Line
 Wire Wire Line
 	6325 3125 6425 3125
 Text HLabel 6325 3325 0    50   Input ~ 0
-CSR_DEV-
+CSR_CHG-
 Text HLabel 6325 3125 0    50   Input ~ 0
-CSR_DEV+
+CSR_CHG+
 Connection ~ 6925 3325
 Wire Wire Line
 	6925 3325 6725 3325
@@ -72,7 +72,7 @@ P 6925 3525
 AR Path="/6124321F/6156355D" Ref="R?"  Part="1" 
 AR Path="/61528830/6156355D" Ref="R?"  Part="1" 
 F 0 "R?" H 6855 3479 50  0000 R CNN
-F 1 "165K" H 6855 3570 50  0000 R CNN
+F 1 "82K5" H 6855 3570 50  0000 R CNN
 F 2 "" V 6855 3525 50  0001 C CNN
 F 3 "~" H 6925 3525 50  0001 C CNN
 	1    6925 3525
@@ -110,7 +110,7 @@ Connection ~ 4525 3225
 Wire Wire Line
 	5375 3225 5200 3225
 Text HLabel 5375 3225 2    50   Output ~ 0
-V_I_BATT
+I_BATT
 Connection ~ 4525 4950
 Wire Wire Line
 	4525 4950 4650 4950
@@ -209,9 +209,7 @@ Wire Wire Line
 	6650 5050 7025 5050
 Wire Wire Line
 	6975 4450 7725 4450
-Wire Wire Line
-	3125 3725 3725 3725
-Text HLabel 3125 3725 0    50   Output ~ 0
+Text HLabel 3125 3525 0    50   Input ~ 0
 1V65_REF
 Wire Wire Line
 	4025 3525 4025 3775
@@ -284,8 +282,6 @@ F 3 "~" H 6650 4850 50  0001 C CNN
 	1    6650 4850
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3725 3725 3725 3675
 $Comp
 L power:GND #PWR?
 U 1 1 615315A3
@@ -307,30 +303,12 @@ Text HLabel 3125 3325 0    50   Input ~ 0
 CSR_BATT-
 Text HLabel 3125 3125 0    50   Input ~ 0
 CSR_BATT+
-Connection ~ 3725 3325
-Wire Wire Line
-	3725 3325 3525 3325
 Wire Wire Line
 	3725 3325 3825 3325
 Wire Wire Line
-	3725 3375 3725 3325
-Wire Wire Line
 	4525 3225 4425 3225
 Wire Wire Line
-	4525 2575 4525 3225
-Wire Wire Line
-	4275 2575 4525 2575
-Connection ~ 3725 3125
-Wire Wire Line
-	3725 3125 3825 3125
-Wire Wire Line
-	3725 3125 3525 3125
-Wire Wire Line
-	3725 2575 3725 3125
-Wire Wire Line
-	3975 2575 3725 2575
-Wire Wire Line
-	4025 2925 4025 2875
+	4025 2925 4025 2900
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6153158B
@@ -356,58 +334,6 @@ F 2 "" H 4075 3325 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4175 3425 50  0001 C CNN
 	5    4125 3225
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6153157F
-P 4125 2575
-AR Path="/6124321F/6153157F" Ref="R?"  Part="1" 
-AR Path="/61528830/6153157F" Ref="R?"  Part="1" 
-F 0 "R?" V 3918 2575 50  0000 C CNN
-F 1 "165K" V 4009 2575 50  0000 C CNN
-F 2 "" V 4055 2575 50  0001 C CNN
-F 3 "~" H 4125 2575 50  0001 C CNN
-	1    4125 2575
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61531579
-P 3725 3525
-AR Path="/6124321F/61531579" Ref="R?"  Part="1" 
-AR Path="/61528830/61531579" Ref="R?"  Part="1" 
-F 0 "R?" H 3655 3479 50  0000 R CNN
-F 1 "165K" H 3655 3570 50  0000 R CNN
-F 2 "" V 3655 3525 50  0001 C CNN
-F 3 "~" H 3725 3525 50  0001 C CNN
-	1    3725 3525
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61531573
-P 3375 3325
-AR Path="/6124321F/61531573" Ref="R?"  Part="1" 
-AR Path="/61528830/61531573" Ref="R?"  Part="1" 
-F 0 "R?" V 3168 3325 50  0000 C CNN
-F 1 "5K" V 3259 3325 50  0000 C CNN
-F 2 "" V 3305 3325 50  0001 C CNN
-F 3 "~" H 3375 3325 50  0001 C CNN
-	1    3375 3325
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6153156D
-P 3375 3125
-AR Path="/6124321F/6153156D" Ref="R?"  Part="1" 
-AR Path="/61528830/6153156D" Ref="R?"  Part="1" 
-F 0 "R?" V 3168 3125 50  0000 C CNN
-F 1 "5K" V 3259 3125 50  0000 C CNN
-F 2 "" V 3305 3125 50  0001 C CNN
-F 3 "~" H 3375 3125 50  0001 C CNN
-	1    3375 3125
-	0    1    1    0   
 $EndComp
 $Comp
 L Amplifier_Operational:LM2902 U?
@@ -542,4 +468,55 @@ Wire Wire Line
 	8400 3225 8275 3225
 Wire Wire Line
 	7725 3225 7975 3225
+Text HLabel 3225 3125 2    50   Input ~ 0
+P0A
+Text HLabel 3725 3125 0    50   Input ~ 0
+P0W
+Text HLabel 4575 2975 2    50   Input ~ 0
+P0B
+Wire Wire Line
+	4575 2975 4525 2975
+Wire Wire Line
+	4525 2975 4525 3225
+Wire Wire Line
+	3725 3125 3825 3125
+Text HLabel 3225 3325 2    50   Input ~ 0
+P1A
+Text HLabel 3725 3325 0    50   Input ~ 0
+P1W
+Text HLabel 3225 3525 2    50   Input ~ 0
+P1B
+Wire Wire Line
+	3225 3525 3125 3525
+$Comp
+L Device:C C?
+U 1 1 61AC6ADE
+P 3750 2900
+F 0 "C?" V 3498 2900 50  0000 C CNN
+F 1 "100N" V 3589 2900 50  0000 C CNN
+F 2 "" H 3788 2750 50  0001 C CNN
+F 3 "~" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61AC727A
+P 3525 2900
+AR Path="/6124321F/61AC727A" Ref="#PWR?"  Part="1" 
+AR Path="/61528830/61AC727A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3525 2650 50  0001 C CNN
+F 1 "GND" H 3530 2727 50  0000 C CNN
+F 2 "" H 3525 2900 50  0001 C CNN
+F 3 "" H 3525 2900 50  0001 C CNN
+	1    3525 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3525 2900 3600 2900
+Wire Wire Line
+	3900 2900 4025 2900
+Connection ~ 4025 2900
+Wire Wire Line
+	4025 2900 4025 2875
 $EndSCHEMATC

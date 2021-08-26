@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 61996F35
+P 7050 3400
+AR Path="/61996F35" Ref="FB?"  Part="1" 
+AR Path="/6198CA67/61996F35" Ref="FB?"  Part="1" 
+F 0 "FB?" V 6776 3400 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6867 3400 50  0000 C CNN
+F 2 "" V 6980 3400 50  0001 C CNN
+F 3 "~" H 7050 3400 50  0001 C CNN
+	1    7050 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6375 3400 6900 3400
+$Comp
+L Power_Protection:SP0502BAHT D?
+U 1 1 61996F3C
+P 6900 4125
+AR Path="/61996F3C" Ref="D?"  Part="1" 
+AR Path="/6198CA67/61996F3C" Ref="D?"  Part="1" 
+F 0 "D?" H 7105 4171 50  0000 L CNN
+F 1 "SP0502BAHT" H 7105 4080 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7125 4075 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 7025 4250 50  0001 C CNN
+	1    6900 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61996F42
+P 6900 4400
+AR Path="/61996F42" Ref="#PWR?"  Part="1" 
+AR Path="/6198CA67/61996F42" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6900 4150 50  0001 C CNN
+F 1 "GND" H 6905 4227 50  0000 C CNN
+F 2 "" H 6900 4400 50  0001 C CNN
+F 3 "" H 6900 4400 50  0001 C CNN
+	1    6900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4400 6900 4325
+$Comp
+L power:GND #PWR?
+U 1 1 61996F4C
+P 4925 4775
+AR Path="/61996F4C" Ref="#PWR?"  Part="1" 
+AR Path="/6198CA67/61996F4C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4925 4525 50  0001 C CNN
+F 1 "GND" H 4930 4602 50  0000 C CNN
+F 2 "" H 4925 4775 50  0001 C CNN
+F 3 "" H 4925 4775 50  0001 C CNN
+	1    4925 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61996F52
+P 4725 4500
+AR Path="/61996F52" Ref="C?"  Part="1" 
+AR Path="/6198CA67/61996F52" Ref="C?"  Part="1" 
+F 0 "C?" H 4610 4454 50  0000 R CNN
+F 1 "100N" H 4610 4545 50  0000 R CNN
+F 2 "" H 4763 4350 50  0001 C CNN
+F 3 "~" H 4725 4500 50  0001 C CNN
+	1    4725 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4725 4350 4725 4300
+Wire Wire Line
+	4725 4650 4725 4725
+$Comp
+L Device:R R?
+U 1 1 61996F5C
+P 5125 4500
+AR Path="/61996F5C" Ref="R?"  Part="1" 
+AR Path="/6198CA67/61996F5C" Ref="R?"  Part="1" 
+F 0 "R?" H 5195 4546 50  0000 L CNN
+F 1 "1M" H 5195 4455 50  0000 L CNN
+F 2 "" V 5055 4500 50  0001 C CNN
+F 3 "~" H 5125 4500 50  0001 C CNN
+	1    5125 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 4350 5125 4300
+Wire Wire Line
+	5125 4650 5125 4725
+Wire Wire Line
+	4925 4725 4925 4775
+Wire Wire Line
+	6375 3700 6800 3700
+Wire Wire Line
+	6375 3800 7000 3800
+Wire Wire Line
+	6800 3925 6800 3700
+Wire Wire Line
+	7000 3925 7000 3800
+$Comp
+L Device:R R?
+U 1 1 6199A346
+P 7675 3950
+F 0 "R?" H 7605 3904 50  0000 R CNN
+F 1 "5K1 20%" H 7605 3995 50  0000 R CNN
+F 2 "" V 7605 3950 50  0001 C CNN
+F 3 "~" H 7675 3950 50  0001 C CNN
+	1    7675 3950
+	-1   0    0    1   
+$EndComp
+Connection ~ 6800 3700
+Connection ~ 7000 3800
+Wire Wire Line
+	6800 3700 7175 3700
+Wire Wire Line
+	7000 3800 7175 3800
+Wire Wire Line
+	7675 3800 7675 3600
+Wire Wire Line
+	7675 3600 6375 3600
+Wire Wire Line
+	4975 3600 4450 3600
+Wire Wire Line
+	4450 3600 4450 4000
+$Comp
+L power:GND #PWR?
+U 1 1 6199D60C
+P 7675 4225
+AR Path="/6199D60C" Ref="#PWR?"  Part="1" 
+AR Path="/6198CA67/6199D60C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7675 3975 50  0001 C CNN
+F 1 "GND" H 7680 4052 50  0000 C CNN
+F 2 "" H 7675 4225 50  0001 C CNN
+F 3 "" H 7675 4225 50  0001 C CNN
+	1    7675 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6199EC73
+P 4450 4150
+F 0 "R?" H 4380 4104 50  0000 R CNN
+F 1 "5K1 20%" H 4380 4195 50  0000 R CNN
+F 2 "" V 4380 4150 50  0001 C CNN
+F 3 "~" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	1    0    0    1   
+$EndComp
+Text HLabel 7775 3400 2    50   Output ~ 0
+5V
+Wire Wire Line
+	7775 3400 7200 3400
+Text HLabel 7175 3700 2    50   Output ~ 0
+USB_D+
+Text HLabel 7175 3800 2    50   Output ~ 0
+USB_D-
+$Comp
+L Project_Library:USB4110-GF-A_REVB J?
+U 1 1 61277E34
+P 5675 3700
+F 0 "J?" H 5675 4267 50  0000 C CNN
+F 1 "USB4110-GF-A_REVB" H 5675 4176 50  0000 C CNN
+F 2 "GCT_USB4110-GF-A_REVB" H 5150 3000 50  0001 L BNN
+F 3 "" H 5675 3700 50  0001 L BNN
+F 4 "3.26 mm" H 5500 2775 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "GCT" H 5600 2850 50  0001 L BNN "MANUFACTURER"
+F 6 "B" H 5650 2700 50  0001 L BNN "PARTREV"
+F 7 "Manufacturer Recommendations" H 5075 2925 50  0001 L BNN "STANDARD"
+	1    5675 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 4300 4925 4300
+Wire Wire Line
+	7675 4100 7675 4225
+$Comp
+L power:GND #PWR?
+U 1 1 6127BB0A
+P 4450 4375
+AR Path="/6127BB0A" Ref="#PWR?"  Part="1" 
+AR Path="/6198CA67/6127BB0A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 4125 50  0001 C CNN
+F 1 "GND" H 4455 4202 50  0000 C CNN
+F 2 "" H 4450 4375 50  0001 C CNN
+F 3 "" H 4450 4375 50  0001 C CNN
+	1    4450 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4375 4450 4300
+Text HLabel 4875 3700 0    50   Output ~ 0
+USB_D+
+Text HLabel 4875 3800 0    50   Output ~ 0
+USB_D-
+Wire Wire Line
+	4875 3700 4975 3700
+Wire Wire Line
+	4975 3800 4875 3800
+Wire Wire Line
+	4925 4725 5125 4725
+Wire Wire Line
+	4925 4725 4725 4725
+Connection ~ 4925 4725
+Wire Wire Line
+	4925 4300 4925 4100
+Wire Wire Line
+	4925 4100 4975 4100
+Connection ~ 4925 4300
+Wire Wire Line
+	4925 4300 5125 4300
+NoConn ~ 6375 3900
+NoConn ~ 4975 3900
+$Comp
+L power:GND #PWR?
+U 1 1 61285438
+P 6500 4400
+AR Path="/61285438" Ref="#PWR?"  Part="1" 
+AR Path="/6198CA67/61285438" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6500 4150 50  0001 C CNN
+F 1 "GND" H 6505 4227 50  0000 C CNN
+F 2 "" H 6500 4400 50  0001 C CNN
+F 3 "" H 6500 4400 50  0001 C CNN
+	1    6500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4400 6500 4100
+Wire Wire Line
+	6500 4100 6375 4100
+$EndSCHEMATC

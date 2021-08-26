@@ -60,8 +60,20 @@ K linear regulator ldo fixed positive low noise low quienscent current
 F http://www.st.com/content/ccc/resource/technical/document/datasheet/29/10/f7/87/2f/66/47/f4/DM00076097.pdf/files/DM00076097.pdf/jcr:content/translations/en.DM00076097.pdf
 $ENDCMP
 #
+$CMP MCP4351-104E
+D Quad SPI Digital Potentiometer with Volatile Memory
+K Digital POT 4
+F https://ww1.microchip.com/downloads/en/DeviceDoc/22242A.pdf
+$ENDCMP
+#
 $CMP PAM2423
 F https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/PAM2421,22,23.pdf
+$ENDCMP
+#
+$CMP RT7295A
+D 3.5A, 18V, 500kHz ACOTTM SynchronousStep-Down Converter
+K regulator step-down
+F https://www.richtek.com/assets/product_file/RT7295A/DS7295A-08.pdf
 $ENDCMP
 #
 #End Doc Library
