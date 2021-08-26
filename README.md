@@ -18,14 +18,16 @@ $$V_{out} = (\frac{R_1}{R_2} + 1) * 1.262$$
 
 The MCP4351 has a total different number of 257 different positions or "taps" that the potentiometer can place the "wiper". The resistor divider network's is calculated as follows *(datasheet, pg. 43)*:
 
-    R_aw = (100e3 / 256) * N + 75
-    R_wb = (100e3 / 256) * (257 - N) + 75
-     
-    R_aw(0) = 75 Ohms
-    R_wb(0) = 100.465 kOhms
-     
-    R_aw(257) = 100.465 kOhms
-    R_wb(257) = 75 Ohms
+$$\begin{split}
+R_{aw} &= \frac{100*10^3*N}{256}+75\\
+R_{wb} &= \frac{100*10^3*(257-N)}{256}+75\\
+\\
+R_{aw}(0) &= 75\Omega\\
+R_{wb}(0) &= 10.465k\Omega\\
+\\
+R_{aw}(257) &= 10.465k\Omega\\
+R_{wb}(257) &= 75\Omega\\
+\end{split}$$
 
 Therefore, the the output voltage of the converter can be expressed as an quadratic with an asymptote, where $R_1 = R_{aw}$ and $R_2 = R_{wb}$:
 
