@@ -60,7 +60,9 @@
 .gitignore
 .gitattributes
 .md
+README.html
 
 #Parts Downloads
 /Parts
 /Datasheets
+README.html
