@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Project_Library)(type Legacy)(uri ${KIPRJMOD}/Project_Library.lib)(options "")(descr ""))
+  (lib (name Lithium_Ion_Pack-rescue)(type Legacy)(uri ${KIPRJMOD}/Lithium_Ion_Pack-rescue.lib)(options "")(descr ""))
 )
